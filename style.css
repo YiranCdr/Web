@@ -1,0 +1,213 @@
+a{
+    text-decoration: none;
+    color: gray;
+}
+/*----------------------------*\
+	menu
+\*----------------------------*/
+#nav .container {
+    position: relative;
+}
+#nav-fixed {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 90;
+    background-color: #FFF;
+    -webkit-box-shadow: 0px -2px 0px 0px #eceef2 inset;
+    box-shadow: 0px -2px 0px 0px #eceef2 inset;
+}
+
+.cat-1 a:after, .cat-1 a:hover {
+    color: #4BB92F;
+
+}
+.cat-2 a:after, .cat-2 a:hover {
+    color: #ff8700;
+}
+.cat-3 a:after, .cat-3 a:hover {
+    color: #0078ff;
+}
+
+/*----------------------------*\
+	logo
+\*----------------------------*/
+
+.nav-logo{
+    font-family: "STKaiti";
+    font-size: 1.5em;
+    display: inline-block;  
+    padding-left: 1em;
+}
+.nav-logo a{
+    color: rgb(80, 79, 79);  
+}
+
+/*----------------------------*\
+	menu
+\*----------------------------*/
+
+.nav-menu{
+    display: inline-block;
+}
+.nav-menu li {
+    display: inline-block;
+}
+.nav-menu li a {
+    padding: 15px 15px;
+}
+
+/*----------------------------*\
+	log-in
+\*----------------------------*/
+
+.nav-log-in{    
+    display: inline-block;
+    float: right;
+}
+.nav-log-in li{
+    display: inline-block;
+}
+.nav-log-in li a {
+    padding: 15px 20px;
+    box-shadow: -1px 0px 0px 0px #eceef2 inset;
+}
+
+/*----------------------------*\
+	anchor
+\*----------------------------*/
+
+#anchor{
+    position: relative;
+}
+
+/*----------------------------*\
+	recommend
+\*----------------------------*/
+
+#recommend {
+    position: absolute;
+    top: 2.5em;
+    display: inline-block;
+    width: 65%; 
+    padding-left: 1em;   
+}
+
+#recommend-title{
+    color: gray;
+}
+
+.img-container{
+    background-image: url("img/3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25.5em;
+}
+
+#recommend-detail{
+    padding: 0.5em;
+    position: absolute;
+    bottom: 0;
+    font-family: "宋体"
+}
+
+.recommend-activity-name{
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+}
+
+.recommend-activity-name {
+    line-height: .3em;
+}
+
+.recommend-activity-detail{
+    color: white;
+}
+
+
+/*----------------------------*\
+	new
+\*----------------------------*/
+
+#new{
+    display: inline-block;
+    position: absolute;
+    top: 2.5em;
+    left: 68.5%;
+    width: 27%; 
+    height: 30em;
+    padding-right: 1em; 
+    padding-left: 1em;      
+    box-shadow: 1px 0px 0px 0px #eceef2 inset;
+}
+
+#new-title{
+    color: gray;
+}
+
+#new-col-title{
+    float: left;
+}
+
+#new-col-more{
+    float: right;
+    font-size: small;
+}
+
+#new-activities{
+    clear: both;
+}
+
+.activity{
+    padding-left: .6em;    
+}
+
+
+.activity-img{
+    width: 40%;
+    height: 30%;
+    float: left;
+}
+.activity-description{
+    width: 55%; 
+    height: 30%;
+    float: left;
+    padding-left: .5em;
+    color: gray;
+}
+
+.new-activity-name{
+    line-height: 0em;
+}
+
+.activity-description:hover{
+    color: #4BB92F;
+}
+
+.new-activity-time{
+    font-size: small;
+}
+
+.new-activity-holder{
+    font-size: small;
+    line-height: .2em;
+}
+
+.new-clear1{
+    clear: both;
+    height: .7em;
+}
+
+.new-clear{
+    clear: both;
+    height: .7em;
+    box-shadow: 0px 1px 0px 0px #eceef2 inset;
+}
+
+
+/*----------------------------*\
+	tags
+\*----------------------------*/
+
