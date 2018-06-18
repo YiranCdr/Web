@@ -400,3 +400,75 @@ form p > * {
     color: #4BB92F;
 }
 
+/*----------------------------*\
+	add
+\*----------------------------*/
+
+#add-container{
+    width: 55%;    
+    margin: 0 auto;
+    color: grey;
+}
+
+form p > * {  
+    display: inline-block;  
+    vertical-align: middle;  
+    box-shadow: 1px 1px 1px rgb(199, 197, 197);
+}  
+
+  
+.add-label_input {  
+    font-size: 14px;  
+    font-family: 宋体;  
+  
+    width: 120px;  
+    height: 31px;  
+    line-height: 28px;  
+    text-align: center;  
+  
+    color: grey;  
+    background-color: whitesmoke;  
+    border-top-left-radius: 5px;  
+    border-bottom-left-radius: 5px;  
+
+    
+}  
+  
+.add-text_field {  
+    width: 80%;  
+    height: 28px;  
+    border-top-right-radius: 5px;  
+    border-bottom-right-radius: 5px;  
+    border: 0;  
+    outline: none;
+}  
+  
+#btn_add {  
+    font-size: 14px;  
+    font-family: 宋体;  
+  
+    width: 120px;  
+    height: 28px;  
+    line-height: 28px;      
+    text-align: center;  
+  
+    color: grey;  
+    background-color: whitesmoke;  
+    border-radius: 6px;  
+    border: 0;  
+  
+    box-shadow: 1px 1px 1px rgb(199, 197, 197);
+    outline: none;
+}  
+
+#btn_add:active, #btn_add:hover{
+    color: #4BB92F;
+}
+
+#my-advitity-description{
+    height: 10em;
+}
+
+#add-dscrption{
+    vertical-align: top;
+}
