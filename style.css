@@ -208,6 +208,195 @@ a{
 
 
 /*----------------------------*\
-	tags
+	log_in
 \*----------------------------*/
+#log-in{
+    position: absolute;
+    top: 5em;
+    left: 35%;
+    text-align: center;
+}
+
+form p > * {  
+    display: inline-block;  
+    vertical-align: middle;  
+    box-shadow: 1px 1px 1px rgb(199, 197, 197);
+}  
+
+  
+.label_input {  
+    font-size: 14px;  
+    font-family: 宋体;  
+  
+    width: 65px;  
+    height: 31px;  
+    line-height: 28px;  
+    text-align: center;  
+  
+    color: grey;  
+    background-color: whitesmoke;  
+    border-top-left-radius: 5px;  
+    border-bottom-left-radius: 5px;  
+
+    
+}  
+  
+.text_field {  
+    width: 278px;  
+    height: 28px;  
+    border-top-right-radius: 5px;  
+    border-bottom-right-radius: 5px;  
+    border: 0;  
+    outline: none;
+}  
+  
+#btn_login {  
+    font-size: 14px;  
+    font-family: 宋体;  
+  
+    width: 120px;  
+    height: 28px;  
+    line-height: 28px;      
+    text-align: center;  
+  
+    color: grey;  
+    background-color: whitesmoke;  
+    border-radius: 6px;  
+    border: 0;  
+  
+    box-shadow: 1px 1px 1px rgb(199, 197, 197);
+}  
+
+/*----------------------------*\
+	register
+\*----------------------------*/
+#register{
+    position: absolute;
+    top: 5em;
+    left: 35%;
+    text-align: center;
+}
+
+form p > * {  
+    display: inline-block;  
+    vertical-align: middle;  
+    box-shadow: 1px 1px 1px rgb(199, 197, 197);
+}  
+
+  
+.register-label_input {  
+    font-size: 14px;  
+    font-family: 宋体;  
+  
+    width: 120px;  
+    height: 31px;  
+    line-height: 28px;  
+    text-align: center;  
+  
+    color: grey;  
+    background-color: whitesmoke;  
+    border-top-left-radius: 5px;  
+    border-bottom-left-radius: 5px;  
+
+    
+}  
+  
+.register-text_field {  
+    width: 278px;  
+    height: 28px;  
+    border-top-right-radius: 5px;  
+    border-bottom-right-radius: 5px;  
+    border: 0;  
+    outline: none;
+}  
+  
+#btn_register {  
+    font-size: 14px;  
+    font-family: 宋体;  
+  
+    width: 120px;  
+    height: 28px;  
+    line-height: 28px;      
+    text-align: center;  
+  
+    color: grey;  
+    background-color: whitesmoke;  
+    border-radius: 6px;  
+    border: 0;  
+  
+    box-shadow: 1px 1px 1px rgb(199, 197, 197);
+    outline: none;
+}  
+
+#btn_register:active, #btn_register:hover{
+    color: #4BB92F;
+}
+
+/*----------------------------*\
+	activity-detail
+\*----------------------------*/
+
+#vice-anchor{
+    position: absolute;
+    top: 3.5em;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* cool! exactly the method i want to make box center! mark mark mark*/
+}
+
+#activity-detail-container{
+    width: 60%;    
+    margin: 0 auto;
+    color: grey;
+}
+
+#activity-detail-img{
+    width: 100%;
+    height: 27em;
+    background-image: url("img/4.jpg");
+    background-size: cover; 
+
+}
+
+#activity-detail-title{
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+/*----------------------------*\
+	all-activity
+\*----------------------------*/
+
+#all-activity-container{
+    width: 55%;    
+    margin: 0 auto;
+    color: grey;
+}
+
+.activity-abstract-img{
+    background-image: url("img/1.jpg");
+    height: 10em;
+    width: 35%;
+    float: left;
+    background-size: cover; 
+}
+
+.activity-abstract-descriptions{
+    height: 10em;
+    width: 60%;
+    float: left;
+    vertical-align: top;
+    padding-left: 1em;
+}
+
+.activity-abstract-descriptions p{
+    text-overflow: ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+    width: 100%;
+}
+.href-acitivity-abstruct:hover{
+    color: #4BB92F;
+}
 
