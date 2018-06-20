@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>中山大学活动信息管理平台</title>
+        <link type="text/css" rel="stylesheet" href="style.css"/>
+    </head>
+    <style>
+        header > h2{
+            margin-left: 30px;
+            color: grey;
+        }
+        .cat-1 {color: rgb(75,185,47); }
+        .modal{
+            display: none;
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 1000;
+            overflow:scroll;
+            background-color: rgba(0,0,0,0.5);
+        }
+        .modal-content{
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: space-between;
+            width: 50%;
+            max-width: 700px;
+            height: wrap-content;
+            max-height: wrap-content;
+            margin: 0 auto;
+            border-radius:10px;
+            background-color:#fff;
+            -webkit-animation: zoom 0.6s;
+            animation: zoom 0.6s;
+            resize: both;
+            overflow: auto;
+        }
+        @-webkit-keyframes zoom{
+            from {-webkit-transform: scale(0)}
+            to {-webkit-transform: scale(1)}
+        }
+        @keyframes zoom{
+            from {transform: scale(0)}
+            to {transform: scale(1)}
+        }
+        .modal-header{
+            box-sizing:border-box;
+            border-bottom:1px solid #ccc;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: grey;
+        }
+        .close{
+            color: #b7b7b7;
+            font-size: 30px;
+            font-weight: bold;
+            margin-right: 20px;
+            transition: all 0.3s;
+        }
+        .close:hover, .close:focus{
+            color: #95b4ed;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .modal-body{
+            padding: 0 30px;
+            font-size: 16px;
+            box-sizing:border-box;
+            color: grey;
+        }
+        .modal-body > #title {
+            padding-top: 20px;
+            font-size: xx-large;
+            font-weight: bold;
+        }
+        .modal-footer{
+            box-sizing:border-box;
+            border-top:1px solid #ccc;
+            display: flex;
+            padding: 15px;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .modal-footer button{
+            width: 60px;
+            height: 35px;
+            padding: 5px;
+            box-sizing: border-box;
+            margin-right: 10px;
+            font-size: 16px;
+            color: white;
+            border-radius: 5px;
+            background-color: cornflowerblue;
+        }
+        .modal-footer button:hover, .modal-footer button:focus{
+            background-color: #95b4ed;
+            cursor: pointer;
+        }
+        @media only screen and (max-width: 700px){
+            .modal-content {
+                width: 80%;
+            }
+        }
+    </style>
+    <body>
+        <!-- Header -->
+            <header id="header">
+                <!-- Nav -->
+                <div id="nav">
+                    <!-- Main Nav -->
+                    <div id="nav-fixed">
+                        <div class="container">
+                            <!-- logo -->
+                            <div class="nav-logo">
+                                <a href="manager_activity.html" class="logo">中山大学活动信息管理平台</a>
+                            </div>
+                            <!-- /logo -->
+
+                            <!-- nav -->
+                            <ul class="nav-menu">
+                                <li class="cat-1">审批活动</li>
+                                <li class="cat-2"><a href="manager_club.html">审批社团</a></li>
+                            </ul>
+                            <!-- /nav -->
+
+                            <!-- search & aside toggle -->
+                            <ul class="nav-log-in"> 
+                                <li class="cat-2"><a href="manager_log_in.html">退出</a></li>
+                            </ul>
+                            <!-- /search & aside toggle -->
+                        </div>
+                    </div>
+                    <!-- /Main Nav -->
+                </div>
+            </header>
+        <!-- /Header -->
+
+        <!-- position anchor-->
+        <div id = "anchor">
+            <div id = "vice-anchor">
+                <div id = "all-activity-container">
+                    <a class = "href-acitivity-abstruct">
+                    <div class = "activity-abstract">
+                        <div class = "activity-abstract-img"></div>
+                        <div class = "activity-abstract-descriptions">
+                            <p class = "activity-abstract-name"><活动名称></p>
+                            <p class = "activity-abstract-time"><活动时间></p>
+                            <p class = "activity-abstract-holder"><主办方></p> 
+                            <p class = "activity-abstract-description"><简述></p>      
+                        </div>
+                    </div>
+                    </a>
+                    
+                    <div class = "new-clear1"></div>
+                    <div class = "new-clear"></div>
+
+                    <a class = "href-acitivity-abstruct">
+                    <div class = "activity-abstract">
+                        <div class = "activity-abstract-img"></div>
+                        <div class = "activity-abstract-descriptions">
+                            <p class = "activity-abstract-name"><活动名称></p>
+                            <p class = "activity-abstract-time"><活动时间></p>
+                            <p class = "activity-abstract-holder"><主办方></p>
+                            <p class = "activity-abstract-description"><简述></p>
+                        </div>
+                    </div>
+                    </a>
+
+                    <div class = "new-clear1"></div>
+                    <div class = "new-clear"></div>
+
+                    <a class = "href-acitivity-abstruct">
+                    <div class = "activity-abstract">
+                        <div class = "activity-abstract-img"></div>
+                        <div class = "activity-abstract-descriptions">
+                            <p class = "activity-abstract-name"><活动名称></p>
+                            <p class = "activity-abstract-time"><活动时间></p>
+                            <p class = "activity-abstract-holder"><主办方></p>
+                            <p class = "activity-abstract-description"><简述></p>
+                        </div>
+                    </div>`
+                    </a>
+                    <div class = "new-clear1"></div>
+                    <div class = "new-clear"></div>
+                    <a class = "href-acitivity-abstruct">
+                    <div class = "activity-abstract">
+                        <div class = "activity-abstract-img"></div>
+                        <div class = "activity-abstract-descriptions">
+                            <p class = "activity-abstract-name"><活动名称></p>
+                            <p class = "activity-abstract-time"><活动时间></p>
+                            <p class = "activity-abstract-holder"><主办方></p>
+                            <p class = "activity-abstract-description"><简述></p>
+                        </div>
+                    </div>
+                    </a>
+                    <div class = "new-clear1"></div>
+                    <div class = "new-clear"></div>
+                    <a class = "href-acitivity-abstruct">
+                    <div class = "activity-abstract">
+                        <div class = "activity-abstract-img"></div>
+                        <div class = "activity-abstract-descriptions">
+                            <p class = "activity-abstract-name"><活动名称></p>
+                            <p class = "activity-abstract-time"><活动时间></p>
+                            <p class = "activity-abstract-holder"><主办方></p>
+                            <p class = "activity-abstract-description"><简述></p>
+                        </div>
+                    </div>
+                    </a>
+                    <div class = "new-clear1"></div>
+                    <div class = "new-clear"></div>
+                    <a class = "href-acitivity-abstruct">
+                    <div class = "activity-abstract">
+                        <div class = "activity-abstract-img"></div>
+                        <div class = "activity-abstract-descriptions">
+                            <p class = "activity-abstract-name"><活动名称></p>
+                            <p class = "activity-abstract-time"><活动时间></p>
+                            <p class = "activity-abstract-holder"><主办方></p>
+                            <p class = "activity-abstract-description"><简述></p>
+                        </div>
+                    </div>
+                    </a>
+                    <div class = "new-clear1"></div>
+                    <div class = "new-clear"></div>
+                    <a class = "href-acitivity-abstruct">
+                    <div class = "activity-abstract">
+                        <div class = "activity-abstract-img"></div>
+                        <div class = "activity-abstract-descriptions">
+                            <p class = "activity-abstract-name"><活动名称></p>
+                            <p class = "activity-abstract-time"><活动时间></p>
+                            <p class = "activity-abstract-holder"><主办方></p>
+                            <p class = "activity-abstract-description"><简述></p>
+                        </div>
+                    </div>
+                    </a>
+                    <div class = "new-clear1"></div>
+                    <div class = "new-clear"></div>
+                    <a class = "href-acitivity-abstruct">
+                    <div class = "activity-abstract" >
+                        <div class = "activity-abstract-img"></div>
+                            <div class = "activity-abstract-descriptions">
+                                <p class = "activity-abstract-name"><活动名称></p>
+                                <p class = "activity-abstract-time"><活动时间></p>
+                                <p class = "activity-abstract-holder"><主办方></p>
+                                <p class = "activity-abstract-description"><简述></p>
+                            </div>
+                        </div>
+                    </a>
+
+                    
+
+                    <div style = "height: 5em;"></div>
+                </div>
+                <!--all-activity-container end-->
+
+                
+
+            </div>
+        </div>
+        <!-- /position anchor-->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2><活动名称></h2>
+                    <span class="close">×</span>
+                </header>
+                <div class="modal-body">
+                    <div id="activity-detail-img"></div>
+                    <p>发布时间：<span><发布时间></span></p>
+                    <p>活动时间：<span><活动时间></span></p>
+                    <p>主办方：<span><活动主办方></span></p>
+                    <p>活动简介：</p>
+                    <div id = "activity-detail-more">
+                        <p>继赤色之瞳西安&成都双城演出之后，赤瞳音乐在这个夏天将带领旗下三支乐队南下，赴广州、深圳开展一次有关夏日夜语的联合演出。</p>
+        
+                        <p>参加演出的三支乐队在风格上各有差异，但在地理位置及听觉感受上都属于偏南方系乐队，他们分别是——来自台湾的低迷梦幻流行大团屋塔U.TA；成立于南京，立志要成为一支永世长存不朽的传奇摇滚乐队的Schoolgirl Byebye；以及活跃于杭州的迷幻噪响之声 Gatsby in a Daze（晕盖）。</p>
+                            
+                        <p>我们有太多关于夏天的记忆，而这些关于夏天的记忆似乎大多都停留在夜晚。吹过了夏夜晚风，听醉了苍南夜语，在南方七月的夏夜，这三支混合着潮湿与灰暗、梦幻和明媚的乐队会合奏出怎样的夜语，描绘出怎样的夜色呢？让我们侧耳聆听，拭目以待吧。</p>
+                    </div>
+                </div>
+                <footer class="modal-footer">
+                    <button id="deny">拒绝</button>
+                    <button id="pass">通过</button>
+                    <button id="cancel">取消</button>
+                </footer>
+            </div>
+        </div>
+        <!-- modal end-->
+    </body>
+    <script>  
+        var cnt = document.getElementsByClassName('activity-abstract').length;
+        var btn=new Array();
+        for(var i = 0; i < cnt; i++){
+            btn[i] = document.getElementsByClassName('activity-abstract')[i];
+            btn[i].addEventListener('click', function(){  
+                modal.style.display = "block"; 
+            });  
+        }
+        //var btn = document.getElementsByClassName('activity-abstract')[0];  
+        var close = document.getElementsByClassName('close')[0];  
+        var cancel = document.getElementById('cancel');  
+        var modal = document.getElementById('modal');  
+        /*btn.addEventListener('click', function(){  
+            modal.style.display = "block";  
+        }); */ 
+        close.addEventListener('click', function(){  
+            modal.style.display = "none";
+        });  
+        cancel.addEventListener('click', function(){  
+            modal.style.display = "none"; 
+        });  
+    </script>
+</html>

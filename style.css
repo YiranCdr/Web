@@ -39,6 +39,8 @@ a{
     font-size: 1.5em;
     display: inline-block;  
     padding-left: 1em;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
 }
 .nav-logo a{
     color: rgb(80, 79, 79);  
